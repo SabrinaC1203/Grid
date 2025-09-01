@@ -22,9 +22,19 @@
             const size = 100 / x;
             square.style.width = size + "%";
             square.style.height = size + "%";
+            hoverSquares(square);
             grid.appendChild(square);
         } 
     } console.log(createSquares(16));
+
+    function hoverSquares (square){
+        square.addEventListener(
+        "mouseover", (e) => {
+        e.target.style.backgroundColor = "gray";
+    });
+}
+
+
 
 
 
