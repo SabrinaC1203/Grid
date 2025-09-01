@@ -1,0 +1,15 @@
+% Create squares with java
+    x Create div container in HTML
+    x Select it on java
+    x Inside it, create divs x number of times with loop
+    x Make it as a grid 16x16 in the loop
+    x Input classList to squares for style
+    x Append to container
+    x Use Flexbox to make it appear as a grid on CSS => box-sizing border-box
+    - Add hover effect with javascript with mouse entering and leaving squares
+% Add button to change square numbers
+    x Create button on HTML
+    x Select it on java
+    - Function to get possible input between 2 and 100 with popup
+    - Change actual grid with new input
+    - Make it in the same total space
