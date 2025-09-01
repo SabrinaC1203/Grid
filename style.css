@@ -7,7 +7,5 @@ div{
 
 .cell{
     aspect-ratio: 1 / 1;
-    background-color: rgb(0, 162, 255);
-    border: solid;
     box-sizing: border-box;
 }

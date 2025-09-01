@@ -8,6 +8,7 @@
             const size = 100 / x;
             square.style.width = size + "%";
             square.style.height = size + "%";
+            square.style.backgroundColor = randomColor();
             hoverSquares(square);
             grid.appendChild(square);
         } 
@@ -20,7 +21,7 @@
     });
         square.addEventListener(
         "mouseout", (e) => {
-        e.target.style.backgroundColor = "";
+        e.target.style.backgroundColor = randomColor();
     });
     }
 
@@ -40,3 +41,12 @@
         createSquares(size);
     }
     button.addEventListener("click", changeGrid);
+
+    function randomColor () {
+        let symbols = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++){
+            color += symbols[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
